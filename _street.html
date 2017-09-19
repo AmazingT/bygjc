@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>商业步行街</title>
+
+	<link rel="stylesheet" href="css/huxing.css">
+</head>
+<body>
+	<div class="container">
+		<div class="pic-box">
+			<div class="iframe-img">
+				<!-- 商业步行街图 -->
+				<div class="img-box">
+					<img src="img/road.jpg"/>
+				</div>
+
+
+				<!-- 步行街平面图 -->
+				<div class="floor">
+					<!-- 步行街一层平面图 -->
+					<div class="one-floor">
+						<div class="img-box">
+							<img src="img/pic-road-1.jpg" />
+						</div>
+
+						<!-- 一层 -->
+						<div class="solid">
+							<div class="wrapper">
+								<p><左右滑动></p>
+								<img src="img/road-1.jpg"/>
+							</div>
+						</div>
+					</div>
+					
+					<!-- 步行街二层平面图 -->
+					<div class="two-floor">
+						<div class="img-box">
+							<img src="img/pic-road-2.jpg" />
+						</div>
+						
+						<!-- 二层 -->
+						<div class="solid">
+							<div class="wrapper">
+								<p><左右滑动></p>							
+								<img src="img/road-2.jpg"/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 底部声明 -->
+				<div class="footer">
+					<img src="img/state.png" />
+				</div>
+			</div>
+	
+		</div>
+		
+		<!-- 底部横幅 -->
+		<div class="bottom-pic">
+			<p>Beyond International City</p>
+		</div>	
+
+		<!--悬浮Phone-->
+	    <div class="fiexs">
+	    	<a class="tel" href="tel:0851-85555771">
+	    	<img src="img/LiPhone.png" width="100%" />
+	    	</a>
+	    </div>
+	</div>
+
+	<script>
+		(function(win, doc) {
+			// 获取不同设备的html的font-size值
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize', //orientationchange事件判断方向
+				recalc = function() {
+					var clientWidth = docEl.clientWidth;
+					if (!clientWidth) return;
+					if (clientWidth >= 640) {
+						docEl.style.fontSize = '100px';
+					} else {
+						docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+					}
+				};
+			if (!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(window, document);
+	</script>
+</body>
+</html>

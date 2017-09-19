@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>E6栋户型展示</title>
+
+	<link rel="stylesheet" href="css/huxing.css">
+</head>
+<body>
+	<div class="container" style="background: url(img/BYang_Bg.png) center no-repeat fixed;
+	background-size: cover;padding: 0 0 1rem 0;">
+		<!-- 户型展示图 -->
+		<div class="pic-box">
+			<img id="img" src="img/hx-{{index}}.jpg"  alt="户型展示" style="width: 100%;" />
+		</div>
+
+		<!-- 底部横幅 -->
+		<div class="bottom-pic">
+			<p>Beyond International City</p>
+			<!-- <div class="pic">
+				<img src="img/ymao.png" alt="">
+			</div> -->
+		</div>
+
+		<!--悬浮Phone-->
+	    <div class="fiexs">
+	    	<a class="tel" href="tel:0857-8547777">
+	    	<img src="img/LiPhone.png" width="100%" />
+	    	</a>
+	    </div>
+
+	    <!-- 返回 -->
+		<div id="h-back" class="back"></div>
+	</div>
+	
+	<script src="js/template.js"></script>
+	<script>
+		(function(win, doc) {
+			//户型返回
+			var hback = document.getElementById('h-back');
+			hback.addEventListener('click', function(event) {
+				event.preventDefault();
+				history.go(-1);
+			}, false);
+
+			// 获取不同设备的html的font-size值
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize', //orientationchange事件判断方向
+				recalc = function() {
+					var clientWidth = docEl.clientWidth;
+					if (!clientWidth) return;
+					if (clientWidth >= 640) {
+						docEl.style.fontSize = '100px';
+					} else {
+						docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+					}
+				};
+			if (!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(window, document);
+	</script>
+</body>
+</html>

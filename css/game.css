@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: transparent;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.container{
+	height: 100%;
+	position: relative;
+	max-width: 640px;
+	overflow: hidden;
+}
+.wrapper{
+	width: 60%;
+    height: 5rem;
+    margin-left: 23%;
+    position: relative;
+    margin-top: 3rem;
+    background: url(../img/game.png) no-repeat;
+    background-size: contain;
+}
+.wrapper .game{
+	width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+}
+.wrapper .game-1{
+	top: -1.4rem;
+}
+.wrapper .game-2{
+	right: 0;
+    top: 0.3rem;
+}
+.wrapper .game-3{
+	top: 2.3rem;
+    left: -0.7rem;
+}
+.wrapper .game-4{
+	right: 0.4rem;
+    top: 3.3rem;
+}
+.wrapper .game a img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.container .bg-box{
+	left: 0;
+	bottom: 0;
+	position: absolute;
+}
+.container .bg-box img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}

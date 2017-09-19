@@ -1,0 +1,152 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%
+}
+
+.container {
+	height: 100%;
+	max-width: 640px;
+	background: url(../img/BYang_Bg.png) center no-repeat;/*这里加了fixed后背景图会随着屏幕宽度变化*/
+	background-size: cover;
+	padding: 0.35rem 0.35rem 1.0rem 0.35rem;
+	position: relative;
+	box-sizing: border-box
+}
+
+.container .box {
+	height: 100%
+}
+
+.container .pic-box {
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch
+}
+
+.container .pic-box iframe {
+	height: 100%;
+	width: 100%
+}
+
+@font-face {
+	font-family: city;
+	src: url(../fonts/ITCEDSCR.TTF)
+}
+
+.container .bottom-pic {
+	position: absolute;
+	z-index: 900;
+	left: 0;
+	bottom: 0.5rem;
+	width: 100%;
+	height: 0.5rem;
+	font-size: 0.35rem;
+	font-family: city;
+	text-align: center;
+	line-height: 0.5rem;
+	background: url(../img/Footer.png) center no-repeat;
+	background-size: cover
+}
+
+.container .bottom-pic .pic {
+	position: absolute;
+	z-index: 999;
+	width: 0.8rem;
+	height: 0.8rem;
+	bottom: 0.65rem;
+	left: 4.55rem;
+	display: block
+}
+
+.container .bottom-pic .pic img {
+	width: 100%;
+	height: 100%
+}
+
+.container .back {
+	left: 50%;
+	margin-left: -0.4rem;
+	position: absolute;
+	bottom: 0.05rem;
+	z-index: 999;
+	width: 0.8rem;
+	height: 0.4rem;
+	background: url(../img/back.png) center no-repeat;
+	background-size: contain
+}
+
+.iframe-img,
+.iframe-img .img-box {
+	background-color: #fff
+}
+
+.iframe-img .img-box img,
+.iframe-img .footer img,
+.iframe-img	.floor .one-floor .img-box img,
+.iframe-img	.floor .two-floor .img-box img {
+	width: 100%
+}
+
+.iframe-img .footer img {
+	display: block
+}
+
+.iframe-img .floor {
+	margin-top: -0.25rem;
+	background-color: #fff
+}
+
+.iframe-img .floor .one-floor .solid,
+.iframe-img .floor .two-floor .solid {
+	padding: 0.1rem 0;
+    border-top: 1px solid #000;
+    position: relative;
+    border-bottom: 1px solid #000;
+}
+.wrapper img {
+	height: 100%;
+	display: block;
+}
+
+.iframe-img .footer {
+	margin-top: 0.2rem
+}
+
+.wrapper {
+	height: 6rem;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+	border-top: 1px dashed #000;
+	border-bottom: 1px dashed #000
+}
+.wrapper p{
+	color: #696969;
+    position: absolute;
+    font-size: 0.2rem;
+    left: 50%;
+    margin-left: -0.5rem;
+}
+.fiexs {
+	width: 0.35rem;
+	position: absolute;
+	top: 0.6rem;
+	right: 0.5rem;
+	z-index: 1000
+}
+
+.tel {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	text-decoration: none
+}

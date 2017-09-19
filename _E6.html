@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=640,user-scalable=no">
+	<!-- IOS启用 WebApp 全屏模式 -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!-- IOS全屏模式下隐藏状态栏/设置状态栏颜色 content的值为default | black | black-translucent  -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<!-- IOS添加到主屏后的标题 -->
+	<meta name="apple-mobile-web-app-title" content="标题">
+	<!-- IOS添加智能 App 广告条 Smart App Banner -->
+	<meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+	 
+	<!-- 去除iphone 识别数字为号码 -->
+	<meta name="format-detection" content="telephone=no">
+	<!-- 不识别邮箱 -->
+	<meta name="format-detection" content="email=no">
+	<!-- 禁止跳转至地图 -->
+	<meta name="format-detection" content="adress=no">
+	<!-- 可以连写-->
+	<meta name="format-detection" content="telephone=no,email=no,adress=no">
+	<title>E6栋户型展示</title>
+
+	<link rel="stylesheet" href="css/E6.css">
+</head>
+<body>
+	<div class="container">
+		<div class="center">
+			<div class="home">
+				<!-- 1.2.3号房 -->
+				<div class="home-top">
+					<ul>
+						<li>
+							<a href="javascript:void(0)" class="number"></a>
+							<p>建筑面积: 约92.97m²</p>
+							<p>三室两厅一厨一卫</p>
+							
+							<!-- 点击提示 -->
+							<i class="icon"></i>
+
+							<!-- 二级菜单 -->
+							<div class="menu">
+								<div class="menu-content">
+									<a href="E6_1/index.html">全景示意</a>
+								</div>
+								<div class="menu-content">
+									<a href="huxing.html?h=1">平面鸟瞰</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="number"></a>
+							<p>建筑面积: 约130.34m²</p>
+							<p>三室两厅一厨一卫</p>
+
+							<!-- 二级菜单 -->
+							<div class="menu">
+								<div class="menu-content">
+									<a href="E6_2/index.html">全景示意</a>
+								</div>
+								<div class="menu-content">
+									<a href="huxing.html?h=2">平面鸟瞰</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="number"></a>
+							<p style="text-align: center;">建筑面积: 约144m²</p>
+							<p>四室两厅一厨双卫</p>
+
+							<!-- 二级菜单 -->
+							<div class="menu">
+								<div class="menu-content">
+									<a href="E6_3/index.html">全景示意</a>
+								</div>
+								<div class="menu-content">
+									<a href="huxing.html?h=3">平面鸟瞰</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- 4.5号房 -->
+				<div class="home-bottom">
+					<ul>
+						<li>
+							<a href="javascript:void(0)" class="number"></a>
+							<p>建筑面积: 约117.10m²</p>
+							<p>三室两厅一厨双卫</p>
+
+							<!-- 二级菜单 -->
+							<div class="menu">
+								<div class="menu-content">
+									<a href="E6_4/index.html">全景示意</a>
+								</div>
+								<div class="menu-content">
+									<a href="huxing.html?h=4">平面鸟瞰</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="number"></a>
+							<p>建筑面积: 约126.09m²</p>
+							<p>三室两厅一厨一卫</p>
+
+							<!-- 二级菜单 -->
+							<div class="menu">
+								<div class="menu-content">
+									<a href="E6_5/index.html">全景示意</a>
+								</div>
+								<div class="menu-content">
+									<a href="huxing.html?h=5">平面鸟瞰</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		! function() {
+			var num = $('.number'),
+				menu = $('.menu'),
+				_menu;
+
+			num.each(function(i) {
+				$(this).on('click touchstart', function(ev) {
+					ev.preventDefault();
+					ev.stopPropagation();
+					_menu = $(ev.target).siblings(".menu");// 当前点击的menu
+					menu.not(_menu).hide();// 从所有menu集合中删除当前点击的menu
+					$(this).siblings('.menu').slideToggle();
+				});
+			});
+
+			$(document).on('click touchstart', function() {
+				num.each(function() {
+					$(this).siblings('.menu').slideUp();
+				});
+			});
+		}();
+	</script>
+</body>
+</html>

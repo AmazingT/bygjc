@@ -1,0 +1,518 @@
+.coniter .music {
+	z-index: 990;
+	top: 50px;
+	right: 30px;
+	position: absolute;
+}
+
+.coniter .music .check {
+	z-index: 999;
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	display: block;
+	transform: scale(.8);
+	animation: rotate 4s linear infinite;
+	background: url(../img/music_disc.png) no-repeat;
+}
+
+@keyframes rotate {
+	0% {
+		transform: scale(.8) rotate(0)
+	}
+
+	100% {
+		transform: scale(.8) rotate(360deg)
+	}
+
+}
+
+.Open,
+.PosiNav {
+	width: 100%;
+	left: 0
+}
+
+.Liuq,
+.Liuq1,
+.Open,
+.Open1,
+.coniter,
+body,
+html {
+	overflow: hidden
+}
+
+.PosiNav li,
+.PosiNav1 li {
+	list-style: none;
+	float: left
+}
+
+* {
+	margin: 0;
+	padding: 0
+}
+
+a {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	text-decoration: none
+}
+
+body,
+html {
+	position: relative;
+	width: 100%;
+	height: 100%
+}
+
+.loading {
+	width: 100%;
+	height: 100%;
+	background: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 111;
+}
+
+.viod {
+	width: 100%;
+	height: 100%;
+	background: gainsboro;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 111;
+}
+
+.loadingres {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.loadingpos {
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.loadJd {
+	width: 240px;
+	height: 5px;
+	background: red;
+	border-radius: 15px;
+	margin: 15px 5px 0px;
+}
+
+.loadJd-chir {
+	width: 0px;
+	height: 5px;
+	border-radius: 15px;
+	background: gold;
+}
+
+.Open {
+	height: 1040px;
+	background: url(../img/BYang_Bg.png) center no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 11;
+}
+
+.conguangg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.OpenHead {
+	width: 100%;
+	height: 100%;
+	position: relative
+}
+
+.PosiNav {
+	padding: 0 2%;
+	height: auto;
+	position: absolute;
+	top: -96px;
+	text-align: center;
+	opacity: 0
+}
+
+.PosiNav li {
+	width: 15%;
+	height: 50px;
+	margin-left: 4%;
+	text-align: center;
+	font-size: 17px;
+	line-height: 48px;
+	color: #C9A063;
+	font-family: Cuhe;
+	background: url(../img/hreadBg.png) center no-repeat;
+	background-size: contain
+}
+
+.imgs {
+	width: 500px;
+	height: 57px;
+	margin: 7px auto 0;
+	position: relative;
+	overflow: hidden
+}
+
+.posiimg {
+	width: 1500px;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 0
+}
+
+.imgPos {
+	position: absolute;
+	right: 88px;
+	bottom: 35px;
+	width: 50px;
+	-webkit-animation: Chuna 15s 1s linear infinite
+}
+
+@keyframes Chuna {
+	0% {
+		bottom: 35px;
+		right: 88px;
+		width: 50px
+	}
+
+	20% {
+		bottom: 50px;
+		right: 185px;
+		width: 30px
+	}
+
+	40% {
+		bottom: 35px;
+		right: 295px;
+		width: 50px
+	}
+
+	60% {
+		bottom: 50px;
+		right: 390px;
+		width: 30px
+	}
+
+	80% {
+		bottom: 35px;
+		right: 475px;
+		width: 50px
+	}
+
+	100% {
+		bottom: 50px;
+		right: 590px;
+		width: 20px
+	}
+
+}
+
+.Wzjiant,
+.Wzjiant1 {
+	margin-left: -300px;
+	height: auto;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+	color: #C9A063
+}
+
+@font-face {
+	font-family: ww;
+	src: url("../fonts/ITCEDSCR.TTF")
+}
+
+.BYangLoGo {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-top: 70px;
+	opacity: 0
+}
+
+.HxangLoGo {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	opacity: 0;
+	position: relative;
+	margin-top: 10px;
+}
+
+.xiaoniao {
+	position: absolute;
+	top: -185px;
+	left: 20px;
+}
+
+.Wzjiant {
+	font-family: jianhe;
+	font-size: 48px;
+	margin-top: 40px
+}
+
+.Wzjiant1 {
+	font-family: lanh;
+	line-height: 25px;
+	font-size: 14px
+}
+
+.OpenLoGo {
+	width: 100%;
+	height: auto;
+	margin-top: 50px;
+	text-align: center;
+	opacity: 0
+}
+
+.Footer_by {
+	width: 100%;
+	height: 155px;
+	background: url(../img/Footer.png) center no-repeat;
+	background-size: contain;
+	text-align: center;
+	line-height: 155px;
+	font-family: ww;
+	font-size: 35px;
+	position: relative;
+	margin-top: 137px;
+	opacity: 0
+}
+
+.Ym {
+	position: absolute;
+	top: -10px;
+	left: 150px
+}
+
+.wzp {
+	opacity: 0
+}
+
+.wzp span {
+	margin-left: -4px
+}
+
+.coniter {
+	width: 640px;
+	position: relative;
+	height: 100%
+}
+
+.Open1 {
+	width: 100%;
+	height: 1040px;
+	background: url(../img/BYang_Bg.png) center no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.OpenHead1 {
+	width: 100%;
+	height: 100%;
+	position: relative
+}
+
+.PosiNav1 {
+	padding: 0 2%;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: -90px;
+	left: 0;
+	text-align: center;
+	opacity: 0
+}
+
+.PosiNav1 li {
+	width: 15%;
+	height: 50px;
+	margin-left: 4%;
+	text-align: center;
+	font-size: 17px;
+	line-height: 48px;
+	color: #C9A063;
+	font-family: Cuhe;
+	background: url(../img/hreadBg.png) center no-repeat;
+	background-size: contain
+}
+
+.BYangLoGo1,
+.HxangLoGo1 {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	opacity: 0
+}
+
+.BYangLoGo1 {
+	margin-top: 70px
+}
+
+.HxangLoGo1 {
+	position: relative;
+	margin-top: 10px;
+}
+
+.sP {
+	width: 80px;
+	height: 40px;
+	border: 1px solid #C9A063;
+	position: absolute;
+	bottom: -55px;
+	left: 300px;
+	font-size: 25px;
+	text-align: center;
+	line-height: 40px;
+	color: #C9A063
+}
+
+.Footer_by1,
+.OpenLoGo1 {
+	width: 100%;
+	text-align: center
+}
+
+.OpenLoGo1 {
+	height: auto;
+	margin-top: 45px;
+	opacity: 0
+}
+
+.Footer_by1 {
+	height: 150px;
+	background: url(../img/Footer.png) center no-repeat;
+	background-size: contain;
+	line-height: 150px;
+	font-family: ww;
+	font-size: 35px;
+	position: relative;
+	margin-top: 137px;
+	opacity: 0
+}
+
+.Liuq li,
+.Liuq1 li {
+	margin-left: 30px;
+	list-style: none;
+	width: 125px;
+	height: 125px;
+	float: left
+}
+
+.Liuq li a,
+.Liuq1 li a {
+	font-size: 24px;
+	text-decoration: none;
+	color: #C9A063
+}
+
+.Ym1 {
+	position: absolute;
+	top: -6px;
+	left: 168px
+}
+
+.wzp1 {
+	opacity: 0
+}
+
+.Liuq {
+	overflow: hidden;
+	padding: 40px 80px 0;
+	margin-left: -545px
+}
+
+.Liuq li {
+	background: url(../img/Luq.png) center no-repeat;
+	background-size: cover
+}
+
+.Liuq1 {
+	width: 200%;
+	overflow: hidden;
+	margin-left: 610px;
+	margin-top: 20px
+}
+
+.Liuq1 li {
+	background: url(../img/Luq.png) center no-repeat;
+	background-size: cover;
+	position: relative
+}
+
+.Liuq li a p,
+.Liuq1 li a p {
+	width: 50px;
+	height: 70px;
+	margin: 31px auto;
+	text-align: center
+}
+
+.pp {
+	width: 125px !important;
+	text-align: center;
+	height: auto !important;
+	margin: 0 !important
+}
+
+.yuyu {
+	width: 180px;
+	height: 50px;
+	opacity: 0;
+	background: url(../img/yuy.png) center no-repeat;
+	background-size: contain;
+	margin: 60px auto 0;
+	text-align: center;
+	line-height: 50px;
+	-webkit-animation: as 2s .5s linear infinite
+}
+
+@keyframes as {
+	0%,
+	100% {
+		transform: rotate(-4deg)
+	}
+
+	25%,
+	75% {
+		transform: rotate(0)
+	}
+
+	50% {
+		transform: rotate(4deg)
+	}
+
+}
+
+.yuyu a {
+	text-decoration: none;
+	color: #C9A063;
+	font-size: 27px
+}
